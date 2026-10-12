@@ -1,0 +1,155 @@
+nav {
+    padding-bottom: 10px;
+    padding-top:10px;
+    display:flex;
+    justify-content: end;
+}
+
+
+nav ul {
+    justify-content: end;
+    display: flex;
+    gap: 20px;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    color: steelblue;
+    margin-right: 10px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+nav li:hover {
+    transform: translateY(-2px);
+    transition: 300ms;
+}
+
+
+
+h4 {
+    margin-right:1000px;
+    font-size: 1em;
+    display: flex;
+    color:white;
+}
+
+h3 {
+    text-align: center;
+    animation: mover 4s;
+    font-size: 3em;
+}
+
+
+
+h1 {
+    background-color: rgb(70, 81, 203);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 8px;
+    
+}
+
+header h1 {
+    border: 3px rgb(56, 33, 203) solid ;
+}
+
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+
+50% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX();
+    }
+}
+
+
+.descripcion {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border-radius:5px;
+    margin-right: 20%;
+    background-color: rgb(32, 122, 140);
+    margin-left: 20%;
+    border: 4px skyblue solid;
+}
+
+.descripcion h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descripcion:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    cursor: pointer;
+}
+
+table {
+   text-align: center;
+   border-radius: 4px;
+   border-color: white;
+}
+
+table th {
+    color: white;
+}
+
+table td {
+    color: bisque;
+}
+
+body {
+    background-image: url(Imagenes/cancha.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+
+button {
+    margin-top: 30px;
+    font-size: 2em;
+    border-radius: 15px;
+    background: local;
+    color: white;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+
+}

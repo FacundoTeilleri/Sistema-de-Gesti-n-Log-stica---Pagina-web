@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra flota</title>
+
+    <style>
+        .transportes img {
+            border-radius: 30px;
+            gap: 50px;
+            margin-top: 10%;
+        }
+
+        .transportes {
+            justify-content: center;
+            display: flex;
+            gap: 50px;
+            animation: mover 6s;
+            max-width: 0px;
+        }
+
+
+
+        .transportes img:hover {
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        header {
+            background-color: cadetblue;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        header:hover {
+            transform: scale(1.1);
+            transition: 3s;
+
+        }
+
+        nav {
+            background: local;
+            display: flex;
+            justify-content: end;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: steelblue;
+        }
+
+        nav li {
+            color: steelblue;
+            font-size: 1.4em;
+            list-style: none;
+            color: inherit;
+            text-decoration: none;
+            margin-right: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        nav li:hover {
+            transform: translateY(-3px);
+            transition: 0.4s;
+        }
+
+        nav details {
+            color: steelblue;
+            font-size: 1.3em;
+            list-style: none;
+            color: inherit;
+            text-decoration: none;
+            margin-top: 16px;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        nav a:hover {
+            transform: translateY(-2.5px);
+            transition: 0.4s;
+
+        }
+
+        .descripcion {
+            position: relative;
+            margin-top: 20px;
+            background-color: steelblue;
+            text-align: center;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: auto;
+        }
+
+        .descripcion:hover {
+            transform: scale(1.1);
+            transition: 2s;
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateX(100vw);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        body {
+            background-image: url(Imagenes/camisetasar.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .transportes_descripcion {
+            background-color: rgb(29, 77, 77);
+            border-radius: 10px;
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            margin-top: 15px;
+        }
+
+        .transportes_descripcion p {
+            text-align: center;
+            color: white;
+        
+        }
+
+        a {
+            display: flex;
+            color: initial;
+            color: rgb(22, 87, 141);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<nav>
+
+    <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+    </ul>
+    <details>
+        <summary>Vehiculos</summary>
+        <a href="#camiones4">Camion Envios</a>
+        <a href="#moto">Moto Envios</a>
+        <a href="#camioneta4x4">Camionetas</a>
+
+    </details>
+</nav>
+
+<body>
+
+
+    <header>
+        <h1>Servicio de logística deportiva</h1>
+        <p>Ofrecemos soluciones de transporte adaptadas a las necesidades de cada empresa y cliente. Contamos con
+            camiones, furgonetas y motos para garantizar el traslado seguro y eficiente de productos y equipamiento
+            deportivo.
+            Desde grandes cargas y pedidos mayoristas hasta entregas rápidas y de última milla, seleccionamos el
+            vehículo adecuado para cada envío, optimizando tiempos, costos y seguridad.
+            Nuestro objetivo: que cada producto llegue a destino de forma rápida, segura y en excelentes condiciones.
+        </p>
+    </header>
+
+
+    <section>
+
+    </section>
+
+
+    <div class="descripcion">
+        <h2>Vehiculos de transporte de nuestra Logistica</h2>
+        <p>Ideales para transportar grandes cantidades de productos
+            y equipamiento deportivo de forma segura y eficiente.</p>
+    </div>
+
+
+    <div class="transportes">
+        <img id="camiones4" src="Imagenes/camiones4.jpg" width="600">
+        <img id="camiones2" src="Imagenes/camiones2.jpg" width="600">
+        <img id="moto" src="Imagenes/moto.jpg" width="600">
+        <img id= "camioneta4x4" src="Imagenes/camioneta4x4.jpg" width="600">
+        <img id="auto" src="Imagenes/auto.avif" width="600">
+    </div>
+
+
+
+    <div class="transportes_descripcion">
+
+        <p>🚛 Camiones
+
+            Diseñados para transportar grandes volúmenes de equipamiento deportivo, materiales y productos. Son ideales
+            para abastecer clubes, gimnasios, tiendas y eventos deportivos de gran escala.
+        </p>
+
+
+        <p>🚐 Furgonetas
+
+            Perfectas para trasladar equipamiento, indumentaria y materiales deportivos de tamaño mediano. Ofrecen
+            rapidez y flexibilidad para entregas a clubes, entrenamientos y competencias.
+        </p>
+        <p>🏍️ Motos
+            Ideales para entregas deportivas rápidas y de menor tamaño. Permiten transportar documentación,
+            indumentaria, accesorios y pequeños productos de forma ágil, especialmente en zonas urbanas.
+        </p>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy;logistica deportiva. Derechos reservados.</p>
+    </footer>
+    <hr>
+</body>
+
+</html>
